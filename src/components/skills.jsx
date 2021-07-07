@@ -323,28 +323,28 @@ const About = () => {
             <div className="text-white font-semibold text-xl mb-3">
               Happy Clinets
             </div>
-            <div className="count text-5xl text-[#D5D5D5]">131</div>
+            <div className="count text-5xl text-[#D5D5D5]">0</div>
           </div>
           <div className="box group transition-all transform hover:-translate-y-2 hover:shadow-2xl mx-4 border-2 w-64 rounded border-[#444] flex flex-col items-center justify-center bg-[#333] py-6">
             <BiCoffeeTogo className="text-[#007CED] text-6xl mb-3 rounded-full p-1 group-hover:bg-white transition-all" />
             <div className="text-white font-semibold text-xl mb-3">
               Coffee Consumed
             </div>
-            <div className="count text-5xl text-[#D5D5D5]">131</div>
+            <div className="count text-5xl text-[#D5D5D5]">0</div>
           </div>
           <div className="box group transition-all transform hover:-translate-y-2 hover:shadow-2xl mx-4 border-2 w-64 rounded border-[#444] flex flex-col items-center justify-center bg-[#333] py-6">
             <FiWatch className="text-[#007CED] text-6xl mb-3 rounded-full p-1 group-hover:bg-white transition-all" />
             <div className="text-white font-semibold text-xl mb-3">
               Worked Hours
             </div>
-            <div className="count text-5xl text-[#D5D5D5]">131</div>
+            <div className="count text-5xl text-[#D5D5D5]">0</div>
           </div>
           <div className="box group transition-all transform hover:-translate-y-2 hover:shadow-2xl mx-4 border-2 w-64 rounded border-[#444] flex flex-col items-center justify-center bg-[#333] py-6">
             <AiOutlineStar className="text-[#007CED] text-6xl mb-3 rounded-full p-1 group-hover:bg-white transition-all" />
             <div className="text-white font-semibold text-xl mb-3">
-              Worked Hours
+              Completed Projects
             </div>
-            <div className="count text-5xl text-[#D5D5D5]">131</div>
+            <div className="count text-5xl text-[#D5D5D5]">0</div>
           </div>
         </div>
       </SwiperSlide>
