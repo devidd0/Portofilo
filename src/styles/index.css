@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .header-menu-item {
+    @apply mx-8 font-semibold border-2 py-2 px-4 rounded transition-all hover:bg-indigo-500 hover:border-indigo-700;
+  }
+  .slider-Item {
+    @apply bg-blue-500 flex items-center justify-center flex-col;
+  }
+}
+
+p.text-xl{
+  font-family: 'Kalam';
+}
