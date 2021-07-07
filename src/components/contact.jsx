@@ -3,6 +3,7 @@ import { VscGithub } from "react-icons/vsc";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import Particles from "react-particles-js";
+import TypewriterComponent from "typewriter-effect";
 // import Swiper core and required modules
 import SwiperCore, {
   Navigation,
