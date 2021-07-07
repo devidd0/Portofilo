@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineHeart, AiOutlineStar } from "react-icons/ai";
 import { BiCoffeeTogo } from "react-icons/bi";
 import { FiWatch } from "react-icons/fi";
@@ -22,6 +22,7 @@ import "swiper/components/effect-fade/effect-fade.scss";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const About = () => {
+  const [showSlideBtn, setShowSlideBtn] = useState(true);
   return (
     <Swiper
       className="h-[calc(100vh-81px)]"
@@ -29,6 +30,12 @@ const About = () => {
       //    delay: 5000,
       //    disableOnInteraction: true,
       //  }}
+      onSlideChange={() => {
+        if (showSlideBtn === true) {
+          setShowSlideBtn(false);
+          console.log("false");
+        }
+      }}
       slidesPerView={1}
     >
       <SwiperSlide className="slider-Item bg-[#222]">
@@ -130,10 +137,12 @@ const About = () => {
           Coding Skills
           <span className="absolute left-0 -bottom-4 bg-[#007CED] w-1/2 h-1 group-hover:w-full transition-all"></span>
         </h1>
-        <div className="z-20 swipe absolute top-1/2 right-2 border-2 flex items-center justify-center h-12  rounded-lg px-10 animate-pulse opacity-0 transform -rotate-90 text-white bg-indigo-400">
-          Swipe
-          <span className="bg-indigo-400 transform rotate-45 w-8 h-8 absolute -bottom-2 z-[-10]"></span>
-        </div>
+        {showSlideBtn ? (
+          <div className="z-20 swipe absolute top-1/2 right-2 border-2 flex items-center justify-center h-12  rounded-lg px-10 animate-pulse opacity-0 transform -rotate-90 text-white bg-indigo-400">
+            Swipe
+            <span className="bg-indigo-400 transform rotate-45 w-8 h-8 absolute -bottom-2 z-[-10]"></span>
+          </div>
+        ) : null}
         <div className="cointaier border-8 border-double rounded p-4">
           <div className="skill-container flex mb-4">
             <div className="skill mx-2">
@@ -257,7 +266,7 @@ const About = () => {
               line_linked: {
                 enable: true,
                 distance: 150,
-                color: "#fff",
+                color: "#ff00ff",
                 opacity: 0.4,
                 width: 1,
               },

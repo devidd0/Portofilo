@@ -139,7 +139,7 @@ const Home = () => {
           <div className="font-bold text-[#F5F5F5] text-3xl mb-4 group-hover:animate-bounce">
             Aziz Imranzade
           </div>
-          <p className="text-lg bg-[#333] p-2 rounded transition-all">
+          <p className="text-lg bg-[#333] p-2 rounded transition-all hover:text-red-500">
             <Typewritter
               onInit={(typewritter) => {
                 typewritter

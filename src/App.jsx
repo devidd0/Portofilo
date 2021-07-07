@@ -15,7 +15,7 @@ import {
 function App() {
   return (
     <Router>
-      <Header/>
+      <Header />
       <Switch>
         <Route path="/" exact>
           <Home />
@@ -27,7 +27,7 @@ function App() {
           <Contact />
         </Route>
       </Switch>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }

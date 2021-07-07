@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +11,19 @@
   }
 }
 
-p.text-xl{
-  font-family: 'Kalam';
+p.text-xl {
+  font-family: "Kalam";
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: #333;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ccc;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

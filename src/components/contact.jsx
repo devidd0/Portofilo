@@ -158,11 +158,7 @@ const Contact = () => {
                 name="_next"
                 value="https://azizportofilio.netlify.app/"
               />
-              <input
-                type="hidden"
-                name="_template"
-                value="table"
-              />
+              <input type="hidden" name="_template" value="table" />
               <button className=" transition-all hover:bg-indigo-500 border-2 rounded text-center px-10 h-10 text-white mx-auto mt-10 block">
                 Send
               </button>
@@ -172,6 +168,7 @@ const Contact = () => {
               cols="30"
               name="User Message"
               rows="10"
+              placeholder="Enter Your Message"
               className="transition-all focus:border-indigo-500 text-white p-4 bg-transparent border-2 outline-none rounded resize-none"
             ></textarea>
           </div>
