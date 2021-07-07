@@ -1,2 +1,0 @@
-# react-vite-tailwindJIT-starter
- 
