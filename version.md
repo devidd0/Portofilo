@@ -1,5 +1,4 @@
-# My Personal Portflio web-page
-<<<<<<< HEAD
+> # [Here is my portofilo web page link](https://azizportofilio.netlify.app/)
 
 > # Used resuources
 
@@ -9,16 +8,33 @@
 - SwipperJs
 - ParticlesJs
 - FormSubmit
-  > # _Wisite my Website_
-- [Here is my portofilo web page link](https://azizportofilio.netlify.app/)
-  > # Versions and ChangeLog
 
-# `version 1.0.0`
+> # Versions and ChangeLog
 
-- Basic standrat web page
+# `Version 1.0.1`
 
-# `version 1.0.2`
+> Basic standrat web page
 
-- Added **`ParticleJs`** for backgrounds ✅
-- Contact design changed a little bit ✅
-- Added mini `Footer section` ✅
+# `Version 1.0.2`
+
+> Added **`ParticleJs`** for backgrounds ✅
+
+> Contact design changed a little bit ✅
+
+> Added mini `Footer section` ✅
+
+# `Version 1.0.3`
+
+> Added `CounterUp` animation for FunFacts section ✅
+
+> `Contact` page desgins changed completly ✅
+
+> Added `Thank You Page` ✅
+
+> Optimized `ParticleJs` Background-Animation ✅
+
+> Minimized templates with `tailwindcss.config.js` and `index.css` ✅
+
+> Added `versionbar` in the header section ✅
+
+> Changed `about-me` text font ✅
