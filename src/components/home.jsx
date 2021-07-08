@@ -119,7 +119,7 @@ const Home = () => {
       />
       <div className="aboutme flex  h-[calc(100vh-20.1vh)] w-full items-center justify-center">
         <div className="avatar-image">
-          <img src={Logo} alt="" className=" object-cover w-full h-full" />
+          <img src={Logo} className=" object-cover w-full h-full" />
         </div>
         <div className="about-text">
           <div className="font-semibold mb-4 text-xl">

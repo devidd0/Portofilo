@@ -38,3 +38,8 @@
 > Added `versionbar` in the header section ✅
 
 > Changed `about-me` text font ✅
+
+# `Version 1.0.3`
+
+> Fixed CounterUp auto start bug ✅
+
