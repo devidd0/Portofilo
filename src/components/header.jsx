@@ -2,12 +2,13 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="flex w-full h-[4.5rem] bg-[#222222] border-b-2 text-white justify-between items-center px-24">
+    <div className="header-container">
       <Link
         to="/"
-        className="logo font-bold text-2xl hover:text-indigo-400 transition-colors"
+        className="header-logo"
       >
         MyProtofilio
+        <span className="text-xl text-[#666] ml-1">/1.0.3</span>
       </Link>
       <ul className="flex">
         <li>

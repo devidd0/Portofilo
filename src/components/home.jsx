@@ -22,9 +22,9 @@ import "swiper/components/effect-fade/effect-fade.scss";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const Home = () => {
   return (
-    <div className="min-w-scren bg-[#222] px-24 py-8 relative">
+    <div className="min-w-scren bg-bgBase1 px-24 py-8 relative">
       <Particles
-        className="absolute w-full h-full top-0 left-0"
+        className="main-bg-particles"
         params={{
           particles: {
             number: {
@@ -118,10 +118,10 @@ const Home = () => {
         }}
       />
       <div className="aboutme flex  h-[calc(100vh-20.1vh)] w-full items-center justify-center">
-        <div className=" overflow-hidden img border-[12px] border-[#444444] rounded-full w-80 h-80 mr-14 transition-all transform hover:shadow-2xl hover:scale-105">
+        <div className="avatar-image">
           <img src={Logo} alt="" className=" object-cover w-full h-full" />
         </div>
-        <div className="about-text w-[35rem] text-[#7E7E7E] border-2 border-[#222222] transition-all p-4">
+        <div className="about-text">
           <div className="font-semibold mb-4 text-xl">
             <Swiper
               loop={true}
@@ -136,10 +136,10 @@ const Home = () => {
               <SwiperSlide>Pen Spinner</SwiperSlide>
             </Swiper>
           </div>
-          <div className="font-bold text-[#F5F5F5] text-3xl mb-4 group-hover:animate-bounce">
+          <div className="font-bold text-baseHeaderColor text-3xl mb-4 group-hover:animate-bounce">
             Aziz Imranzade
           </div>
-          <p className="text-lg bg-[#333] p-2 rounded transition-all hover:text-red-500 font-bold">
+          <p className="text-lg bg-bgBase2 p-2 rounded font-bold">
             <Typewritter
               onInit={(typewritter) => {
                 typewritter

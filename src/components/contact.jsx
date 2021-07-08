@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <div className="h-[calc(100vh-81px)] bg-[#222] flex flex-col relative">
       <Particles
-        className="absolute w-full h-full top-0 left-0"
+        className="main-bg-particles"
         params={{
           particles: {
             number: {
@@ -134,7 +134,7 @@ const Contact = () => {
                   type="text"
                   name="User Name"
                   placeholder="Enter your Name"
-                  className=" transition-all focus:border-indigo-500 border-2 bg-transparent p-2 rounded w-72 outline-none text-white"
+                  className="contact-form-input"
                   required
                 />
               </label>
@@ -144,7 +144,7 @@ const Contact = () => {
                   type="email"
                   name="User Gmail"
                   placeholder="Enter your Email"
-                  className=" transition-all focus:border-indigo-500 border-2 bg-transparent p-2 rounded w-72 outline-none text-white"
+                  className="contact-form-input"
                   required
                 />
               </label>
@@ -156,10 +156,10 @@ const Contact = () => {
               <input
                 type="hidden"
                 name="_next"
-                value="https://azizportofilio.netlify.app/"
+                value="https://azizportofilio.netlify.app/thankyou"
               />
               <input type="hidden" name="_template" value="table" />
-              <button className=" transition-all hover:bg-indigo-500 border-2 rounded text-center px-10 h-10 text-white mx-auto mt-10 block">
+              <button className="contact-form-button">
                 Send
               </button>
             </div>
@@ -169,7 +169,7 @@ const Contact = () => {
               name="User Message"
               rows="10"
               placeholder="Enter Your Message"
-              className="transition-all focus:border-indigo-500 text-white p-4 bg-transparent border-2 outline-none rounded resize-none"
+              className="contact-form-textarea"
             ></textarea>
           </div>
         </form>
@@ -183,41 +183,41 @@ const Contact = () => {
         }}
         slidesPerView={1}
       >
-        <SwiperSlide className="w-full h-full flex items-center justify-between px-56 group">
-          <p className="text-white font-bold text-2xl text-center italic">
+        <SwiperSlide className="contact-social-slider group">
+          <p className="contact-social-slider-header-text">
             My Github Account I share my projects over here.
             <div>JUST FOLLOW</div>
           </p>
           <a
             href="https://github.com/IamEziz"
             target="_blank"
-            className="group-hover:text-[#6e5494]  transition-all transform group-hover:scale-125"
+            className="group-hover:text-[#6e5494] contact-social-slider-social-icons"
           >
             <VscGithub className="text-5xl" />
           </a>
         </SwiperSlide>
-        <SwiperSlide className="w-full h-full flex items-center justify-between px-56 group">
-          <p className="text-white font-bold text-2xl text-center italic">
+        <SwiperSlide className="contact-social-slider group">
+          <p className="contact-social-slider-header-text">
             My YouTube Channel I share Coding tutorials and videos over here .
             <div>JUST FOLLOW</div>
           </p>
           <a
             href="https://www.youtube.com/channel/UCpERt5A7SNd7s5XNAj2mGmw"
             target="_blank"
-            className="group-hover:text-[#ff0000]  transition-all transform group-hover:scale-125"
+            className="group-hover:text-[#ff0000] contact-social-slider-social-icons"
           >
             <AiOutlineYoutube className="text-5xl" />
           </a>
         </SwiperSlide>
-        <SwiperSlide className="w-full h-full flex items-center justify-between px-56 group">
-          <p className="text-white font-bold text-2xl text-center italic">
+        <SwiperSlide className="contact-social-slider group">
+          <p className="contact-social-slider-header-text">
             My Instagram Account I share mini videos over here.
             <div>JUST FOLLOW</div>
           </p>
           <a
             href="https://www.instagram.com/i.am.coder.e/"
             target="_blank"
-            className="group-hover:text-[#e1306c]  transition-all transform group-hover:scale-125"
+            className="group-hover:text-[#e1306c] contact-social-slider-social-icons"
           >
             <FiInstagram className="text-5xl" />
           </a>

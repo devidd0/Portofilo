@@ -4,6 +4,7 @@ import Skills from "./components/skills";
 import Home from "./components/home";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import ThankYou from "./components/thankyou";
 import {
   BrowserRouter as Router,
   Switch,
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route exact path="/contact">
           <Contact />
+        </Route>
+        <Route exact path="/thankyou">
+          <ThankYou />
         </Route>
       </Switch>
       <Footer />
