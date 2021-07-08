@@ -22,13 +22,13 @@ import "swiper/components/effect-fade/effect-fade.scss";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const Home = () => {
   return (
-    <div className="min-w-scren bg-[#222222] px-24 py-8 relative">
+    <div className="min-w-scren bg-[#222] px-24 py-8 relative">
       <Particles
         className="absolute w-full h-full top-0 left-0"
         params={{
           particles: {
             number: {
-              value: 90,
+              value: 60,
               density: {
                 enable: true,
                 value_area: 800,
@@ -122,7 +122,7 @@ const Home = () => {
           <img src={Logo} alt="" className=" object-cover w-full h-full" />
         </div>
         <div className="about-text w-[35rem] text-[#7E7E7E] border-2 border-[#222222] transition-all p-4">
-          <div className="font-semibold mb-4 text-xl transition-colors">
+          <div className="font-semibold mb-4 text-xl">
             <Swiper
               loop={true}
               autoplay={{
@@ -139,7 +139,7 @@ const Home = () => {
           <div className="font-bold text-[#F5F5F5] text-3xl mb-4 group-hover:animate-bounce">
             Aziz Imranzade
           </div>
-          <p className="text-lg bg-[#333] p-2 rounded transition-all hover:text-red-500">
+          <p className="text-lg bg-[#333] p-2 rounded transition-all hover:text-red-500 font-bold">
             <Typewritter
               onInit={(typewritter) => {
                 typewritter

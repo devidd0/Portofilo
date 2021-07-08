@@ -6,6 +6,10 @@ module.exports = {
       animation: {
         bounce: "bounce 1s ease-in-out infinite",
       },
+      backgroundColor :{
+        bgBase1:'#222',
+        bgBase2:'#333'
+      }
     },
   },
   variants: {

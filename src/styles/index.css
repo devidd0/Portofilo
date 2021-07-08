@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,8 +11,8 @@
   }
 }
 
-p.text-xl {
-  font-family: "Kalam";
+p.text-lg {
+  font-family: "Yomogi";
 }
 *::-webkit-scrollbar {
   width: 8px;
