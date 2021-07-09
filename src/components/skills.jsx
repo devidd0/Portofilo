@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineHeart, AiOutlineStar } from "react-icons/ai";
 import { BiCoffeeTogo } from "react-icons/bi";
 import { FiWatch } from "react-icons/fi";
+import { BsArrowDown, BsArrowUp } from "react-icons/bs";
 import Particles from "react-particles-js";
 //Import CountUp
 import CountUp from "react-countup";
@@ -29,15 +30,17 @@ const About = () => {
   return (
     <Swiper
       className="h-[calc(100vh-81px)]"
-      //  autoplay={{
-      //    delay: 5000,
-      //    disableOnInteraction: true,
-      //  }}
+      direction="vertical"
       onSlideChange={() => {
         if (showSlideBtn === true) {
           setShowSlideBtn(false);
         }
       }}
+      navigation={{
+        nextEl: ".slide-next-button",
+        prevEl: ".slide-prev-button",
+      }}
+      allowTouchMove={false}
       slidesPerView={1}
     >
       <SwiperSlide className="slider-Item bg-[#222]">
@@ -135,17 +138,11 @@ const About = () => {
             },
           }}
         />
-        <h1 className="font-bold text-5xl italic text-white mb-16 relative group">
+        <h1 className="font-bold text-3xl lg:text-5xl italic text-white mb-3 mt-4 lg:mb-16 relative group">
           Fun Facts
           <span className="absolute left-0 -bottom-2 bg-[#007CED] w-1/2 h-1 group-hover:w-full transition-all"></span>
         </h1>
-        <div className="container flex justify-center w-full">
-        {showSlideBtn ? (
-          <div className="swipe-btn">
-            Swipe
-            <span className="swipe-mini-tringle"></span>
-          </div>
-        ) : null}
+        <div className="container flex w-full flex-col lg:flex-row items-center overflow-auto lg:justify-center">
           <div className="fun-fact-box group">
             <AiOutlineHeart className="fun-fact-icon" />
             <div className="fun-fact-header-text">Happy Clinets</div>
@@ -165,7 +162,7 @@ const About = () => {
             <div className="count-text">
               <CountUp
                 start={0}
-                end={1245} 
+                end={1245}
                 duration={300}
                 separator=","
                 decimal=","
@@ -197,6 +194,9 @@ const About = () => {
                 decimal=","
               ></CountUp>
             </div>
+          </div>
+          <div className=" text-bold fun-fact-box animate-bounce slide-next-button bottom-0 h-10 lg:absolute text-white ">
+            Click For FunFacts
           </div>
         </div>
       </SwiperSlide>
@@ -295,12 +295,12 @@ const About = () => {
             },
           }}
         />
-        <h1 className="font-bold text-5xl italic text-white mb-16 relative group">
-          Coding Skills
-          <span className="custom-hover-border-bottom"></span>
+        <h1 className="font-bold text-3xl lg:text-5xl italic text-white mb-3 mt-4 lg:mb-16 relative group">
+          Coding Skils
+          <span className="absolute left-0 -bottom-2 bg-[#007CED] w-1/2 h-1 group-hover:w-full transition-all"></span>
         </h1>
-        <div className="cointaier border-8 border-double rounded p-4">
-          <div className="skill-container flex mb-4">
+        <div className="cointaier lg:flex items-center justify-center flex-col z-30 border-8 border-double rounded p-4 h-96 w-full lg:w-[50rem] overflow-x-hidden overflow-y-auto">
+          <div className="skill-container lg:flex-row flex-col flex mb-4">
             <div className="skill mx-2">
               <label className="coding-language-name">Html</label>
               <div className="skill-bar">
@@ -314,7 +314,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="skill-container flex mb-4">
+          <div className="skill-container lg:flex-row flex-col flex mb-4">
             <div className="skill mx-2">
               <label className="coding-language-name">JavaScript</label>
               <div className="skill-bar">
@@ -328,7 +328,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="skill-container flex mb-4">
+          <div className="skill-container lg:flex-row flex-col flex mb-4">
             <div className="skill mx-2">
               <label className="coding-language-name">React</label>
               <div className="skill-bar">
@@ -342,7 +342,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="skill-container flex mb-4">
+          <div className="skill-container lg:flex-row flex-col flex mb-4">
             <div className="skill mx-2">
               <label className="coding-language-name">Python</label>
               <div className="skill-bar">
@@ -357,6 +357,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <BsArrowUp className="font-bold text-[2.3rem] animate-bounce slide-prev-button w-16 h-16 bottom-3 right-3 block text-center absolute z-30 text-white bg-bgBase2 transition-all hover:bg-bgBase3 rounded" />
       </SwiperSlide>
     </Swiper>
   );

@@ -53,4 +53,15 @@
 
 # `Version 1.0.4 Hanburger Menu Path`
 
-> Added Hnabuger menu animation✅
+> Added Hanburger menu animation✅
+
+
+# `Version 1.0.5`
+
+> Slider direction chnaged to vertical✅
+
+> Added resposive support for Skills✅
+
+> Added resposive support for FunFacts✅
+
+> Added slide up and slide down button for skills page with bounce animation ✅
