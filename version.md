@@ -43,3 +43,11 @@
 
 > Fixed CounterUp auto start bug ✅
 
+# `Version 1.0.4`
+
+> Added Responsive Header✅
+
+> Added Responsive Footer ✅
+
+> Added Responsive homepage ✅
+

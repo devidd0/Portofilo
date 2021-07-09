@@ -22,7 +22,7 @@ import "swiper/components/effect-fade/effect-fade.scss";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const Home = () => {
   return (
-    <div className="min-w-scren bg-bgBase1 px-24 py-8 relative">
+    <div className="min-w-scren min-h-scren bg-bgBase1 px-24 py-8 relative">
       <Particles
         className="main-bg-particles"
         params={{
@@ -117,7 +117,7 @@ const Home = () => {
           },
         }}
       />
-      <div className="aboutme flex  h-[calc(100vh-20.1vh)] w-full items-center justify-center">
+      <div className="aboutme flex flex-col lg:flex-row  h-[calc(100vh-20.1vh)] w-full items-center justify-center">
         <div className="avatar-image">
           <img src={Logo} className=" object-cover w-full h-full" />
         </div>

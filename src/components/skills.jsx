@@ -165,7 +165,7 @@ const About = () => {
             <div className="count-text">
               <CountUp
                 start={0}
-                end={1245}
+                end={1245} 
                 duration={300}
                 separator=","
                 decimal=","

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <div className="copyright">
-        <Link to="/" className="text-white font-bold text-2xl mb-2">
+      <div className="copyright mr-3">
+        <Link to="/" className="text-white font-bold lg:text-2xl mb-2">
           My Portofilio
         </Link>
         <div className="text-white">© 2021 Aziz Imranzade Rights Reserved</div>
