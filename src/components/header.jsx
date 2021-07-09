@@ -5,7 +5,7 @@ const Header = () => {
   const handleMobileMenu = () =>
   {
     setShowMobileMenu(!showMobileMenu)
-    console.log('clicked')
+    
   }
   return (
     <div className="header-container">
