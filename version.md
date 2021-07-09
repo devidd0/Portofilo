@@ -51,3 +51,6 @@
 
 > Added Responsive homepage ✅
 
+# `Version 1.0.4 Hanburger Menu Path`
+
+> Added Hnabuger menu animation✅
