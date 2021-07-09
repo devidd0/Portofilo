@@ -11,7 +11,7 @@ const Header = () => {
     <div className="header-container">
       <Link to="/" className="header-logo">
         MyProtofilio
-        <span className="text-xl text-[#666] ml-1">/1.0.5</span>
+        <span className="text-xl text-[#666] ml-1">/1.0.6</span>
       </Link>
       <ul className={`main-nav ${showMobileMenu ? 'top-15 scale-100 lg:bg-transparent' : null}`}>
         <li onClick={handleMobileMenu}>

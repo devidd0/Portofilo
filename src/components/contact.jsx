@@ -3,7 +3,6 @@ import { VscGithub } from "react-icons/vsc";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import Particles from "react-particles-js";
-import TypewriterComponent from "typewriter-effect";
 // import Swiper core and required modules
 import SwiperCore, {
   Navigation,
@@ -118,17 +117,17 @@ const Contact = () => {
         }}
       />
       <div className="flex-1 flex items-center justify-center flex-col">
-        <h1 className="font-bold italic mb-4 text-4xl text-white">
+        <h1 className="font-bold italic mb-4 text-2xl mt-4 lg:text-4xl text-white">
           Contact With Me
         </h1>
         <form
           action="https://formsubmit.co/i.am.hacker.eziz@gmail.com"
           method="POST"
-          className="border-4 border-double rounded py-6 px-12 h-82 z-10"
+          className="lg:border-4 border border-double rounded p-2 lg:py-6 lg:px-12 h-82 z-10"
         >
-          <div className="form-header h-full flex">
-            <div className="inputs mr-4">
-              <label className="mb-2 block">
+          <div className="form-header h-full flex flex-col-reverse lg:flex-row">
+            <div className="inputs mr-4 leading-8 lg:leading-0">
+              <label className="mb-2 block ">
                 <div className="text-white mb-1 font-semibold">Name</div>
                 <input
                   type="text"
@@ -169,13 +168,13 @@ const Contact = () => {
               name="User Message"
               rows="10"
               placeholder="Enter Your Message"
-              className="contact-form-textarea"
+              className="contact-form-textarea h-44 lg:h-full mb-2 lg:mb-0"
             ></textarea>
           </div>
         </form>
       </div>
       <Swiper
-        className="bg-[#333] h-28 w-full"
+        className="bg-[#333] h-28 w-full hidden lg:flex"
         loop={true}
         autoplay={{
           delay: 3000,

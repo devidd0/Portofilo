@@ -65,3 +65,13 @@
 > Added resposive support for FunFacts✅
 
 > Added slide up and slide down button for skills page with bounce animation ✅
+
+# `Version 1.0.6`
+
+> Added resposive support for contact✅
+
+> Added resposive support for thankYouPage✅
+
+> Some responsive bugs fixed ✅ 
+
+> *Full Responsive Support* ✅

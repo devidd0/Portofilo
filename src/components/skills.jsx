@@ -295,7 +295,7 @@ const About = () => {
             },
           }}
         />
-        <h1 className="font-bold text-3xl lg:text-5xl italic text-white mb-3 mt-4 lg:mb-16 relative group">
+        <h1 className="font-bold text-3xl lg:text-5xl italic text-white mb-6 mt-4 lg:mb-16 relative group">
           Coding Skils
           <span className="absolute left-0 -bottom-2 bg-[#007CED] w-1/2 h-1 group-hover:w-full transition-all"></span>
         </h1>
