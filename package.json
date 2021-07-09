@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "netlify-cli": "^4.1.12",
+    "netlify-cli": "^4.1.18",
     "node-sass": "^4.14.1",
     "react": "^17.0.0",
     "react-countup": "^4.4.0",

@@ -36,9 +36,9 @@ const Header = () => {
         </li>
       </ul>
       <div className="mobile-menu absolute border-2 border-white h-10 w-10 flex items-center justify-center top-4 right-6 lg:hidden z-40" onClick={handleMobileMenu}>
-        <div className="w-[80%] h-[2px] bg-white my-2 absolute top-0 transition-all duration-300 transform "></div>
-        <div className="w-[80%] h-[2px] bg-white my-2"></div>
-        <div className="w-[80%] h-[2px] bg-white my-2 absolute bottom-0 transition-all duration-300 transform"></div>
+        <div className={`w-[80%] h-[2px] bg-white my-2 absolute top-0 transition-all duration-300 transform ${showMobileMenu ? '-rotate-45 top-[10px]' :null}`}></div>
+        <div className={`w-[80%] transition-all h-[2px] bg-white my-2 ${showMobileMenu ? 'bg-transparent':null}`}></div>
+        <div className={`w-[80%] h-[2px] bg-white my-2 absolute bottom-0 transition-all duration-300 transform ${showMobileMenu ? 'rotate-45 bottom-[10px]' :null}`}></div>
       </div>
     </div>
   );
