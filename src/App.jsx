@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "./components/header";
 import Skills from "./components/skills";
 import Home from "./components/home";
@@ -18,18 +18,10 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route exact path="/skills">
-          <Skills />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-        <Route exact path="/thankyou">
-          <ThankYou />
-        </Route>
+        <Route path="/" component={Home} exact />
+        <Route path="/skills" component={Skills} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/thankyou" component={ThankYou} />
       </Switch>
       <Footer />
     </Router>

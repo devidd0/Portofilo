@@ -297,7 +297,7 @@ const About = () => {
         />
         <h1 className="font-bold text-3xl lg:text-5xl italic text-white mb-6 mt-4 lg:mb-16 relative group">
           Coding Skils
-          <span className="absolute left-0 -bottom-2 bg-[#007CED] w-1/2 h-1 group-hover:w-full transition-all"></span>
+          <span className="absolute left-0 -bottom-4 bg-[#007CED] w-1/2 h-1 group-hover:w-full transition-all"></span>
         </h1>
         <div className="cointaier lg:flex items-center justify-center flex-col z-30 border-8 border-double rounded p-4 h-96 w-full lg:w-[50rem] overflow-x-hidden overflow-y-auto">
           <div className="skill-container lg:flex-row flex-col flex mb-4">

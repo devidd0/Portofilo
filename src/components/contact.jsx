@@ -123,7 +123,7 @@ const Contact = () => {
         <form
           action="https://formsubmit.co/i.am.hacker.eziz@gmail.com"
           method="POST"
-          className="lg:border-4 border border-double rounded p-2 lg:py-6 lg:px-12 h-82 z-10"
+          className="lg:border-4 border border-double rounded p-2 lg:py-6 lg:px-12 h-82 z-10 bg-bgBase1"
         >
           <div className="form-header h-full flex flex-col-reverse lg:flex-row">
             <div className="inputs mr-4 leading-8 lg:leading-0">
@@ -158,9 +158,7 @@ const Contact = () => {
                 value="https://azizportofilio.netlify.app/thankyou"
               />
               <input type="hidden" name="_template" value="table" />
-              <button className="contact-form-button">
-                Send
-              </button>
+              <button className="contact-form-button">Send</button>
             </div>
             <textarea
               id=""

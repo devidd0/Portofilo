@@ -22,7 +22,7 @@
     @apply overflow-hidden border-[6px] lg:border-[12px] ml-10 border-baseBorder1 rounded-full w-44 h-44 mb-6 lg:mb-0 lg:w-80 lg:h-80 mr-14 transition-all transform hover:shadow-2xl hover:scale-105;
   }
   .about-text {
-    @apply w-[20rem] lg:w-[35rem] text-paragpaphColor border-2 border-baseBorder1 transition-all p-4;
+    @apply w-[20rem] lg:w-[35rem] text-paragpaphColor border-4 border-double rounded border-baseBorder1 transition-all p-4;
   }
   .footer-container {
     @apply flex items-center justify-between px-8 lg:px-24 bg-bgBase3 h-24;

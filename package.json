@@ -7,14 +7,18 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@sanity/client": "^2.11.0",
+    "netlify": "^7.0.1",
     "netlify-cli": "^4.1.18",
     "node-sass": "^4.14.1",
     "react": "^17.0.0",
     "react-countup": "^4.4.0",
     "react-dom": "^17.0.0",
     "react-icons": "^4.2.0",
+    "react-lottie": "^1.2.3",
     "react-particles-js": "^3.5.3",
     "react-router-dom": "^5.2.0",
+    "react-top-loading-bar": "^2.0.1",
     "sass-loader": "^12.1.0",
     "swiper": "^6.7.5",
     "typewriter-effect": "^2.18.0"
