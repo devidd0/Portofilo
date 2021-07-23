@@ -12,6 +12,7 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
+import MainBlogPage from "./Blog/MainBlogPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/skills" component={Skills} />
         <Route path="/contact" component={Contact} />
         <Route path="/thankyou" component={ThankYou} />
+        <Route path="/blog" component={MainBlogPage} />
       </Switch>
       <Footer />
     </Router>

@@ -1,0 +1,8 @@
+[
+  {
+    "post_title": "Blogun ilk postu",
+    "post_content": "> Bu blog *Imranzade Ezizin* blogudur ve burada olan her sey menim haqqimdadir.Bu Blogu [react](`www.reactjs.org`) ile kodladim ve hal hazirda beta versiyadadirile kodladim ve hal hazirda beta versiyadadirile kodladim ve hal hazirda beta versiyadadirile kodladim ve hal hazirda beta versiyadadirile kodladim ve hal hazirda beta versiyadadir \n ------ \n ## Resurslar \n * [React-markdwon](https://www.npmjs.com/package/react-markdown) - Stiller ile blog yazilarini yazmaq ucun \n * [React-router](https://reactrouter.com/) - Routing sistemi ucun ",
+    "post_date": "07.23.2021",
+    "post_slug": "this-is-first-post"
+  }
+]

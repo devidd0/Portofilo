@@ -83,3 +83,7 @@
 > Fixed responsive contact bacground bug ✅
 
 > Added aniamted page loading bar ✅
+
+# `Version 1.0.8`
+
+> Added full responsive blog ✅

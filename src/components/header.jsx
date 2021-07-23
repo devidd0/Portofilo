@@ -43,6 +43,11 @@ const Header = () => {
             Contact
           </Link>
         </li>
+        <li onClick={handleMobileMenu}>
+          <Link to="/blog" className="header-menu-item">
+            Blog
+          </Link>
+        </li>
       </ul>
       <div
         className="mobile-menu absolute border-2 border-white h-10 w-10 flex items-center justify-center top-4 right-6 lg:hidden z-40"
