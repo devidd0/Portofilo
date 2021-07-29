@@ -1,8 +1,20 @@
 [
   {
     "post_title": "Blogun ilk postu",
-    "post_content": "> Bu blog *Imranzade Ezizin* blogudur ve burada olan her sey menim haqqimdadir.Bu Blogu [react](`www.reactjs.org`) ile kodladim ve hal hazirda beta versiyadadirile kodladim ve hal hazirda beta versiyadadirile kodladim ve hal hazirda beta versiyadadirile kodladim ve hal hazirda beta versiyadadirile kodladim ve hal hazirda beta versiyadadir \n ------ \n ## Resurslar \n * [React-markdwon](https://www.npmjs.com/package/react-markdown) - Stiller ile blog yazilarini yazmaq ucun \n * [React-router](https://reactrouter.com/) - Routing sistemi ucun ",
+    "post_content": "> Bu blog *Imranzade Ezizin* blogudur ve burada olan her sey menim haqqimdadir.Bu Blogu [react](`www.reactjs.org`) ile kodladim ve hal hazirda beta versiyadadir\n ------ \n > <h2>Resurslar</h2>\n\n * [React-markdwon](https://www.npmjs.com/package/react-markdown) - Stiller ile blog yazilarini yazmaq ucun \n * [React-router](https://reactrouter.com/) - Routing sistemi ucun \n\n```const [happy,setHappy]=useState('I am so happy')\nconsole.log(happy)\nwindow.onload = ()=>alert('heyy')``` ",
     "post_date": "07.23.2021",
     "post_slug": "this-is-first-post"
+  },
+  {
+    "post_title": "Blog ile bagli guncelleme",
+    "post_content": "> Veeee boyuk problemlerin sonunda nehayet ki porblemleri hell etdim ve blog artik orta seviyyede isleyir  ",
+    "post_date": "07.28.2021",
+    "post_slug": "this-is-second-post"
+  },
+  {
+    "post_title": "Vscode en yaxsi pluginler",
+    "post_content": "> Her kese salam dostlar bu gun sizlerle bir yerde en yaxsi vscode extenstionlarina baxacayiq.Gelin ilk once vscode pluginleri ne ise yarayir,niye istafade etmleyik ona baxaq. Bildiyiniz uzre vscode bir IDE yox text editordur ve bu sebeble <span>IDE</span> de olan bezi xususiyyetler <span>Vscode</span>  da olmaya biler məhz elə bu səbəbdən bize <span>pluginlər</span> lazım olur.\n\n <h3>Vscode En yaxsi pluginler</h3> \n\n >Qeyd! siyahı random ardıcıllıqla düzülüb və pluginlerin adlarina click ederek vscode ucun yukleye bilersiniz \n\n * [Download Tabnine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode) \nTabnine yapay zəka ilə sizin yazdığınız kodu anlamağa çalışır və daha rahat kod yazmağınız ücün size kod yazmaqda kömək edir. \n ![tabnine](https://github.com/codota/TabNine/raw/master/with-and-without-tabnine-java.gif)\n [Tabnine rəsmi səhifə](https://www.tabnine.com/?utm_source=search-web ) \n\n\n * [Download Dutone](https://marketplace.visualstudio.com/items?itemName=husseinkizz.duotone) \nHal hazirda istifadə etdiyim rəng mövzusu budur və uzun müddət gözüm ağrımadan rahat bir səkildə kod yaza bilirəm rəngləndirəsi çox gözəl və kəskindir Bu səbəbdən kodlar rahatca oxunur \n ![tabnine](https://raw.githubusercontent.com/Hussseinkizz/duotone/main/images/react.png) \n\n\n * [Download Bracket pair coloriez 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) \nBracket pair colorizer 2 səkildə göründüyü kimi <span>{} [] ()</span> kimi işarələri rəngləndirir və sizin kod blokunu tapmağınıza kömək edir\n ![Bracket pair colorizer 2](https://miro.medium.com/max/1400/1*spFXbNe3IsQmdHKZ5VmWNw.gif)",
+    "post_date": "07.29.2021",
+    "post_slug": "vscode-en-yaxsi-pluginler"
   }
 ]

@@ -87,3 +87,9 @@
 # `Version 1.0.8`
 
 > Added full responsive blog ✅
+
+# `Version 1.0.9`
+
+> Fıxed blog bugs ✅
+
+> Added sticky Header ✅

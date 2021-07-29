@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [sticky, setStcikyHeader] = useState(false);
+  const headerRef = useRef();
   window.onload = () => {
     setProgress(100);
   };
@@ -12,8 +14,16 @@ const Header = () => {
   };
   const [progress, setProgress] = useState(0);
   const barColor = "#3730A3";
+  window.onscroll = (e) => {
+    window.pageYOffset > 70 ? setStcikyHeader(true) : setStcikyHeader(false);
+  };
   return (
-    <div className="header-container">
+    <div
+      className={`header-container transition-all ${
+        sticky ? "sticky z-50 transform translate-y-0 top-0" : null
+      }`}
+      ref={headerRef}
+    >
       <LoadingBar
         color={barColor}
         progress={progress}
@@ -49,7 +59,7 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-      <div
+      <div  
         className="mobile-menu absolute border-2 border-white h-10 w-10 flex items-center justify-center top-4 right-6 lg:hidden z-40"
         onClick={handleMobileMenu}
       >
