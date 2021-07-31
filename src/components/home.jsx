@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../img/logo.jpeg";
+import Logo from "../img/avatar.jpg";
 import Typewritter from "typewriter-effect";
 import Particles from "react-particles-js";
 // import Swiper core and required modules

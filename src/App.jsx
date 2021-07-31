@@ -5,6 +5,7 @@ import Home from "./components/home";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import ThankYou from "./components/thankyou";
+import ErrorPage from "./components/ErrorPage";
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/thankyou" component={ThankYou} />
         <Route path="/blog" component={MainBlogPage} />
+        <Route path="*" component={ErrorPage}/>
       </Switch>
       <Footer />
     </Router>

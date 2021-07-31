@@ -7,11 +7,11 @@ const OnePost = () => {
 
   const finalOnePost = PostData.filter((post) => post.post_slug === slug.slug);
   return (
-    <div className=" p-2 py-4 lg:p-10  w-full flex items-center flex-col ">
+    <div className=" p-2 py-4 lg:p-10  w-full flex items-center flex-col">
       <div className="postTitle font-bold text-[#333] text-3xl mb-10 bg-white p-4 rounded text-center">
         {finalOnePost[0].post_title}
       </div>
-      <pre className="post-content lg:text-lg  border-2 rounded w-full h-auto p-4 text-white font-mono leading-8">
+      <pre className="post-content lg:text-lg  border-2 rounded w-full h-auto p-4 text-white font-['Roboto Mono'] leading-8">
         <ReactMd markdown={finalOnePost[0].post_content} />
       </pre>
       <div className="post-date text-white text-2xl font-bold italic mt-4 tracking-widest">

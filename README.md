@@ -11,6 +11,9 @@
 - ParticlesJs
 - FormSubmit
 - react-top-loading-bar
+- React-helmet
+- Lottie
+- React-markdown
 
 > # Versions and ChangeLog
 
@@ -93,3 +96,9 @@
 > Fıxed blog bugs ✅
 
 > Added sticky Header ✅
+
+# `Version 1.0.9`
+
+> Mobile font bug fixed ✅
+
+> Added 404 error page ✅

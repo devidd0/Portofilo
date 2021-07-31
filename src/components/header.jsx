@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
+import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [sticky, setStcikyHeader] = useState(false);
   const headerRef = useRef();
   window.onload = () => {
     setProgress(100);
@@ -14,24 +14,27 @@ const Header = () => {
   };
   const [progress, setProgress] = useState(0);
   const barColor = "#3730A3";
-  window.onscroll = (e) => {
-    window.pageYOffset > 70 ? setStcikyHeader(true) : setStcikyHeader(false);
-  };
   return (
-    <div
-      className={`header-container transition-all ${
-        sticky ? "sticky z-50 transform translate-y-0 top-0" : null
-      }`}
-      ref={headerRef}
-    >
+    <div className={`header-container transition-all`} ref={headerRef}>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aziz's Portofilio</title>
+        <meta name="description" content="Bu menim yeni Ezizin web sehifedir" />
+        <meta name="author" content="Eziz imranzade" />
+        <meta
+          name="keywords"
+          content="Eziz imranzade, Eziz imranzade portofilio, eziz ,eziz kimdir,eziz imranzade sexsi web sehife"
+        />
+      </Helmet>
       <LoadingBar
         color={barColor}
         progress={progress}
         onLoaderFinished={() => setProgress(0)}
       />
       <Link to="/" className="header-logo">
-        MyProtofilio
-        <span className="text-xl text-[#666] ml-1">/1.0.7</span>
+        Aziz's Portofilio
+        <span className="text-xl text-[#666] ml-1">/2.0.0</span>
       </Link>
       <ul
         className={`main-nav ${
@@ -59,7 +62,7 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-      <div  
+      <div
         className="mobile-menu absolute border-2 border-white h-10 w-10 flex items-center justify-center top-4 right-6 lg:hidden z-40"
         onClick={handleMobileMenu}
       >
