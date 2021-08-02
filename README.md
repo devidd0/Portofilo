@@ -97,8 +97,13 @@
 
 > Added sticky Header ✅
 
-# `Version 1.0.9`
+# `Version 2.0.0`
 
 > Mobile font bug fixed ✅
 
 > Added 404 error page ✅
+# `Version 2.0.1`
+
+> Added Search blog post ✅
+
+> Blog design changed ✅

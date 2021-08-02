@@ -1,12 +1,18 @@
-import React from "react";
-import PostsData from "../Blog/PostData/PostData.json";
+import React, { useContext } from "react";
 import Post from "./Post";
+import FilterPost from "./FilterPost";
+import { MainContext } from "../MainContext";
 const AllPosts = () => {
+  const {allPosts}=useContext(MainContext)
+  console.log(allPosts)
   return (
-    <div className="overflow-auto flex w-full justify-center lg:justify-around flex-wrap min-h-[calc(100vh-81px)] lg:p-10">
-      {PostsData.map((post, key) => (
-        <Post {...post} key={key} />
-      ))}
+    <div>
+      <FilterPost />
+      <div className="overflow-auto flex w-full justify-center lg:justify-around flex-wrap min-h-[calc(100vh-81px)] lg:p-10">
+        {allPosts.map((post, key) => (
+          <Post {...post} key={key} />
+        ))}
+      </div>
     </div>
   );
 };

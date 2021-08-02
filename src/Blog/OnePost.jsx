@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import PostData from "./PostData/PostData.json";
-import ReactMd from 'react-md-file'
+import ReactMd from "react-md-file";
 const OnePost = () => {
   const slug = useParams();
 
@@ -11,8 +11,8 @@ const OnePost = () => {
       <div className="postTitle font-bold text-[#333] text-3xl mb-10 bg-white p-4 rounded text-center">
         {finalOnePost[0].post_title}
       </div>
-      <pre className="post-content lg:text-lg  border-2 rounded w-full h-auto p-4 text-white font-['Roboto Mono'] leading-8">
-        <ReactMd markdown={finalOnePost[0].post_content} />
+      <pre className="post-content lg:text-lg  border-2 rounded w-full h-auto p-4 text-white font-mono">
+        <ReactMd markdown={finalOnePost[0].post_content}/>
       </pre>
       <div className="post-date text-white text-2xl font-bold italic mt-4 tracking-widest">
         {finalOnePost[0].post_date}

@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="copyright mr-3">
         <Link to="/" className="text-white font-bold lg:text-2xl mb-2">
-          My Portofilio
+          Aziz's Portofilio
         </Link>
         <div className="text-white">© 2021 Aziz Imranzade Rights Reserved</div>
       </div>

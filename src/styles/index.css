@@ -122,7 +122,7 @@ pre blockquote {
   @apply border-l-4 rounded border-gray-300 pl-4 hover:border-indigo-500 transition-all bg-bgBase1 bg-opacity-60 border;
 }
 pre a {
-  @apply text-indigo-500 hover:text-indigo-800 transition-all capitalize;
+  @apply text-indigo-400 hover:border-b-2 border-yellow-500 transition-colors capitalize;
 }
 pre img{
   @apply my-4 mx-auto
@@ -154,4 +154,7 @@ pre span {
 
 pre hr {
   @apply border-baseBorder1 border-2;
+}
+.react-md{
+  @apply leading-8
 }
