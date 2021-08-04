@@ -23,6 +23,11 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const Home = () => {
   return (
     <div className="min-w-scren min-h-scren bg-bgBase1 px-24 py-8 relative">
+      <div border="0" className="absolute top-0 left-0 transition-all text-white flex items-center">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7848400&style=0010&nbdigits=5&type=page&initCount=0" />
+        <span className="ml-2 font-bold">Ziyarətci</span>
+      </div>
+
       <Particles
         className="main-bg-particles"
         params={{

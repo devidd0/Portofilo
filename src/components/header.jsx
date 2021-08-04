@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Helmet } from "react-helmet";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -22,6 +22,11 @@ const Header = () => {
         <title>Aziz's Portofilio</title>
         <meta name="description" content="Bu menim yeni Ezizin web sehifedir" />
         <meta name="author" content="Eziz imranzade" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2882718224765502"
+          crossorigin="anonymous"
+        ></script>
         <meta
           name="keywords"
           content="Eziz imranzade, Eziz imranzade portofilio, eziz ,eziz kimdir,eziz imranzade sexsi web sehife"
@@ -34,7 +39,7 @@ const Header = () => {
       />
       <Link to="/" className="header-logo">
         Aziz's Portofilio
-        <span className="text-xl text-[#666] ml-1">/2.0.1</span>
+        <span className="text-xl text-[#666] ml-1">/2.0.2</span>
       </Link>
       <ul
         className={`main-nav ${
@@ -73,7 +78,7 @@ const Header = () => {
         ></div>
         <div
           className={`w-[80%] transition-all h-[2px] bg-white my-2 ${
-            showMobileMenu ? "bg-transparent" : null
+            showMobileMenu ? "bg-[#222]" : null
           }`}
         ></div>
         <div

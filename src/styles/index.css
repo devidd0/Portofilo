@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -121,14 +121,33 @@ pre {
 pre blockquote {
   @apply border-l-4 rounded border-gray-300 pl-4 hover:border-indigo-500 transition-all bg-bgBase1 bg-opacity-60 border;
 }
+pre span.danger {
+  @apply bg-red-500;
+}
+pre span.hastag {
+  @apply italic font-semibold hover:underline bg-transparent relative;
+}
+pre span.hastag::after {
+  content: "#";
+  position: absolute;
+  left: 0;
+  margin-left: -2px;
+  color: #ddd;
+  top: 50%;
+  transform: translateY(-50%);
+}
+pre span.succes {
+  @apply bg-green-500;
+}
 pre a {
   @apply text-indigo-400 hover:border-b-2 border-yellow-500 transition-colors capitalize;
 }
-pre img{
-  @apply my-4 mx-auto
+pre img {
+  @apply my-4 mx-auto;
 }
 pre li {
-  @apply list-outside bg-gray-300 bg-opacity-80 px-3 text-[#333] rounded py-2;
+  @apply ml-10 -mb-4;
+  list-style: square;
 }
 pre h1 {
   @apply font-bold text-4xl;
@@ -145,16 +164,32 @@ pre h4 {
 pre code {
   @apply bg-bgBase1 p-2 flex rounded border-2 border-l-8 relative;
 }
-pre h6 {
-  @apply absolute bottom-0 right-0;
-}
 pre span {
   @apply bg-gray-500 bg-opacity-40 px-2 py-[2px] rounded-sm;
 }
-
 pre hr {
   @apply border-baseBorder1 border-2;
 }
-.react-md{
-  @apply leading-8
+.react-md {
+  @apply leading-8;
+}
+
+div[border="0"] {
+  animation: showUserLogin 4s;
+  transition-duration: 1000ms;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes showUserLogin {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+  }
 }

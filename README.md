@@ -107,3 +107,9 @@
 > Added Search blog post ✅
 
 > Blog design changed ✅
+
+# `Version 2.0.2`
+
+> Added User Counter ✅
+
+> Added special blog items ✅

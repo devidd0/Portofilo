@@ -1,21 +1,43 @@
 import React, { useContext } from "react";
+import { useState } from "react";
 import { MainContext } from "../MainContext";
 import PostData from "./PostData/PostData.json";
 const FilterPost = () => {
-  const { allPosts, setAllPosts } = useContext(MainContext);
+  const { allPosts, setAllPosts, searchVal, setSearchVal } =
+    useContext(MainContext);
+  console.log(searchVal);
+  const [stcikyFilter, setStickyFilter] = useState(false);
   const handleSearchPost = (e) => {
-    if (e.target.value) {
+    setSearchVal(e.target.value);
+    if (searchVal) {
       setAllPosts(
-        allPosts.filter((p) => p.post_title.trim().toLowerCase().includes(e.target.value))
+        allPosts.filter((p) =>
+          p.post_title.trim().toLowerCase().includes(searchVal)
+        )
       );
-    } else {
-      setAllPosts(PostData);
     }
   };
+  if (!searchVal) {
+    setAllPosts(PostData);
+  }
+  window.onscroll = (e) => {
+    window.pageYOffset < 80 ? setStickyFilter(false) : setStickyFilter(true);
+    console.log(e);
+  };
   return (
-    <div className="w-full h-14 hidden lg:flex items-center px-10 bg-bgBase3 justify-between">
+    <div
+      className={`w-full transition-all h-14 hidden lg:flex items-center px-10 bg-bgBase3 justify-between ${
+        stcikyFilter ? "sticky top-0 border-b-2 z-50  " : null
+      }`}
+    >
       <div className="text-white font-bold text-xl">Search Posts</div>
-      <input type="text" className="border-2 h-10 text-white bg-transparent outline-none rounded text-center w-72" placeholder="Use LowerCase For Serach" onChange={handleSearchPost} />
+      <input
+        type="text"
+        value={searchVal}
+        className="border-2 h-10 text-white bg-transparent outline-none rounded text-center w-72"
+        placeholder="Use LowerCase For Serach"
+        onChange={handleSearchPost}
+      />
     </div>
   );
 };
