@@ -5,7 +5,6 @@ import PostData from "./PostData/PostData.json";
 const FilterPost = () => {
   const { allPosts, setAllPosts, searchVal, setSearchVal } =
     useContext(MainContext);
-  console.log(searchVal);
   const [stcikyFilter, setStickyFilter] = useState(false);
   const handleSearchPost = (e) => {
     setSearchVal(e.target.value);
@@ -22,7 +21,6 @@ const FilterPost = () => {
   }
   window.onscroll = (e) => {
     window.pageYOffset < 80 ? setStickyFilter(false) : setStickyFilter(true);
-    console.log(e);
   };
   return (
     <div

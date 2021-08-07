@@ -39,7 +39,7 @@ const Header = () => {
       />
       <Link to="/" className="header-logo">
         Aziz's Portofilio
-        <span className="text-xl text-[#666] ml-1">/2.0.2</span>
+        <span className="text-xl text-[#666] ml-1">/2.0.3</span>
       </Link>
       <ul
         className={`main-nav ${

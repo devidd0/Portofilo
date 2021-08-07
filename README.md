@@ -113,3 +113,7 @@
 > Added User Counter ✅
 
 > Added special blog items ✅
+
+# `Version 2.0.3`
+
+> Added Latest posts dynamcily ✅
