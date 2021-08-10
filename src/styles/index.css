@@ -194,9 +194,9 @@ div[border="0"] {
   }
 }
 
-.swiper-slide {
-  @apply opacity-50
+.other-post-slide.swiper-slide {
+  @apply opacity-50;
 }
-.swiper-slide-next {
+.other-post-slide.swiper-slide-next {
   @apply opacity-100;
 }

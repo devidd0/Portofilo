@@ -56,7 +56,7 @@ const OnePost = () => {
       >
         {otherPosts &&
           otherPosts.map((otherPost, key) => (
-            <SwiperSlide>
+            <SwiperSlide className="other-post-slide">
               <OtherPost {...otherPost} key={key} />
             </SwiperSlide>
           ))}
